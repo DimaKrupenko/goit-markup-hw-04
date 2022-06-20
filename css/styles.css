@@ -124,8 +124,8 @@ p {
     margin-right: 10px;
 }
 
-.mail :hover ::before,
-.mail :focus ::before {
+.mail :hover,
+.mail :focus {
     color: var(--accent-color);
 }
 
@@ -160,10 +160,11 @@ p {
 }
 /* главная секция */
 .main {
-background-image: url(../image/Img.png);
-text-align: center;
-padding-top: 200px;
-padding-bottom: 200px;
+    background-image: linear-gradient(to right,
+            #2F303A66, rgba(47, 48, 58, 0.4)), url(../image/Img.png);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 
@@ -204,6 +205,11 @@ padding-bottom: 200px;
 }
 
 /* наши преимущества */
+.fature {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .feature-ul {
     display: flex;
@@ -213,6 +219,34 @@ padding-bottom: 200px;
     padding-left: 0;
 
 }
+.attention::before{
+background-image: url(../image/Group\ 1.svg);
+content: "";
+display: block;
+height: 120px;
+}
+
+.punctuality::before{
+    background-image: url(../image/Group\ 2.svg);
+        content: "";
+        display: block;
+        height: 120px;
+}
+.planning::before {
+    background-image: url(../image/Group\ 3\ .svg);
+        content: "";
+        display: block;
+        height: 120px;
+       
+}
+
+.technology::before {
+    background-image: url(../image/Group\ 4.svg);
+        content: "";
+        display: block;
+        height: 120px;
+}
+
 .feature-li + .feature-li {
     margin-left: 30px;
 }
@@ -222,7 +256,7 @@ padding-bottom: 200px;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
     
 }
@@ -278,14 +312,29 @@ padding-bottom: 200px;
     text-align: center;
     
 }
+
+.team-list {
+    border: 1px solid #EEEEEE;
+    background: #ffffff;
+    width: 270px;
+}
+.team-list::after {
+    content: "";
+    display: block;
+    height: 44px;
+    width: 44px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-image: url(../image/Ellipse\ \(4\).svg);
+}
+
 .team-ul {
     display: flex;
-    align-items: center;
-    margin: 0;
-    padding-left: 0;
+    
 }
 .team-list + .team-list {
-    padding-left: 30px;
+    margin-left: 30px;
 }
 .name {
     color: var(--title-text-color);
@@ -295,6 +344,7 @@ padding-bottom: 200px;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
+    width: 270px;
 }
 .job {
     font-weight: 400;
@@ -303,6 +353,7 @@ padding-bottom: 200px;
     text-align: center;
     margin-top: 0;
     display: block;
+    width: 270px;
 }
 /* футер */
 .footer {
