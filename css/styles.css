@@ -132,6 +132,12 @@ p {
     
 }
 
+
+.image-contacts :hover,
+.image-contacts :focus {
+    fill: var(--accent-color);
+}
+
 .current,
 .contacts :hover,
 .contacts :focus {
