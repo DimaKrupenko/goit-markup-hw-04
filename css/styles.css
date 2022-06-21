@@ -66,6 +66,7 @@ p {
     padding-left: 0;
 }
 
+
 .header {
     display: flex;
     align-items: center;
@@ -110,34 +111,12 @@ p {
     margin-left: 50px;
     
 }
+
 .navigation :hover, 
 .navigation :focus {
     color: var(--accent-color);
 }
 
-.mail ::before {
-    content: "";
-    background-image: url(../image/конверт.svg);
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-
-.mail :hover,
-.mail :focus {
-    color: var(--accent-color);
-}
-
-
-.tel ::before {
-    content: "";
-        background-image: url( ../image/телефон.svg);
-        display: inline-block;
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-}
 
 
 .contacts-link {
@@ -318,16 +297,7 @@ height: 120px;
     background: #ffffff;
     width: 270px;
 }
-.team-list::after {
-    content: "";
-    display: block;
-    height: 44px;
-    width: 44px;
-    margin-left: 32px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-image: url(../image/Ellipse\ \(4\).svg);
-}
+
 
 .team-ul {
     display: flex;
