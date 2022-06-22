@@ -3,10 +3,14 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
 }
-a:-webkit-any-link {
-    cursor: default;
+
+
+a {
     text-decoration: none;
+    cursor: default;
 }
+
+
 
 body {
     color:var(--primary-text-color);
@@ -132,15 +136,17 @@ p {
     
 }
 
-
-.image-contacts :hover,
-.image-contacts :focus {
+.contacts-link:hover,
+.contacts-link:focus {
     fill: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.current,
-.contacts :hover,
-.contacts :focus {
+.image-contacts {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.current:hover {
     color: var(--accent-color);
 }
 /* главная секция */
@@ -218,7 +224,7 @@ height: 120px;
         height: 120px;
 }
 .planning::before {
-    background-image: url(../image/Group\ 3\ .svg);
+    background-image: url(../image/Group\ 33.svg);
         content: "";
         display: block;
         height: 120px;
@@ -301,7 +307,7 @@ height: 120px;
 .team-list {
     border: 1px solid #EEEEEE;
     background: #ffffff;
-    width: 270px;
+    
 }
 
 
@@ -320,7 +326,7 @@ height: 120px;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
-    width: 270px;
+    
 }
 .job {
     font-weight: 400;
@@ -331,6 +337,41 @@ height: 120px;
     display: block;
     width: 270px;
 }
+.social-ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    width: 206px;
+}
+.social-image {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    padding: 12px;
+    color: #ffffff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+    
+}
+
+
+.social-li + .social-li {
+    margin-left: 10px;
+}
+
+
 /* футер */
 .footer {
     background-color: #2F303A;
