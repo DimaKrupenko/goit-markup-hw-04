@@ -344,11 +344,12 @@ height: 120px;
     margin-bottom: 30px;
     margin-top: 16px;
     width: 206px;
+    color: #AFB1B8;
 }
 .social-image {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    color: currentColor;
 }
 .social-link {
     width: 44px;
@@ -356,16 +357,17 @@ height: 120px;
     border-radius: 50%;
     display: flex;
     padding: 12px;
-    color: #ffffff;
+    fill: #AFB1B8;
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-color);
-    color: var(--accent-color);
-    
+    fill: #ffffff;
 }
-
+.social-image:hover {
+    fill: #ffffff;
+}
 
 .social-li + .social-li {
     margin-left: 10px;
