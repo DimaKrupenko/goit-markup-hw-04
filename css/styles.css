@@ -410,13 +410,8 @@ height: 120px;
 }
 
 .clients-li {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    text-align: center;
-    justify-content: center;
+   
     display: flex;
-    color: #AFB1B8;
 }
 .clients-li + .clients-li {
     margin-left: 30px;
@@ -426,21 +421,23 @@ height: 120px;
     display: flex;
     padding: 16px 32px;
     fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 .icon-clients {
     color: currentColor;
-    
-}
-
-.clients-li:hover,
-.clients-li:focus {
-    border: 1px solid #2196F3;
 }
 
 
- .clients-link:hover {
+ .clients-link:hover,
+ .clients-link:focus {
     fill: #2196F3;
+    border: 1px solid #2196F3;
  }
 
 
