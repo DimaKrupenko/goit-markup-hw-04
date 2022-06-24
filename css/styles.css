@@ -292,7 +292,7 @@ height: 120px;
 .team {
     margin-top: 0;
     background: #F5F4FA;
-    margin-bottom: 94px;
+    
 }
 .team-title {
     margin-top: 0;
@@ -375,7 +375,7 @@ height: 120px;
 /* секция клиенты */
 
 .clients {
-    margin-bottom: 94px;
+    
     margin-left: auto;
     margin-right: auto;
     text-align: center;
